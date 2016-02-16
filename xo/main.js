@@ -17,14 +17,11 @@ function count(letter) {
   }
   if(x % 2 === 0 && o % 2 === 0) {
     console.log("both the x's and o's are even");
-  }
-  else if(x % 2 === 0) {
+  } else if(x % 2 === 0) {
     console.log("just the x's are even");
-  }
-  else if(o % 2 === 0) {
+  } else if(o % 2 === 0) {
     console.log("just the o's are even");
-  }
-  else {
+  } else {
     console.log("both x's and o's are odd");
   }
 }
