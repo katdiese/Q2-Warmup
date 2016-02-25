@@ -16,11 +16,11 @@ CREATE TABLE apartments(
 
 CREATE TABLE units(
   id serial PRIMARY KEY,
-  apt_id integer
+  apt_id integer REFERENCES apartments(id)
 );
 
 CREATE TABLE tenants(
-  id serial PRIMARY,
+  id serial PRIMARY KEY,
   name text,
   unit_id integer
 );
